@@ -24,8 +24,7 @@ const Draggable = ({ children, width, height }) => {
     const parentPos = draggableRef.current.parentNode.getBoundingClientRect();
     const newX = e.pageX - rel.x;
     const newY = e.pageY - rel.y;
-
-    // Constrain within parent
+    
     const constrainedX = Math.max(
       10,
       Math.min(newX, parentPos.width - draggableRef.current.offsetWidth - 10)
