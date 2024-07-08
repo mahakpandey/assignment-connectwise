@@ -1,0 +1,20 @@
+.draggable {
+  position: absolute;
+  border: 1px solid #000;
+  width: 200px;
+  height: 200px;
+  background: #f0f0f0;
+}
+
+.title-bar {
+  background: #007bff;
+  color: white;
+  padding: 5px;
+  cursor: move;
+}
+
+.content {
+  height: calc(100% - 30px);
+  overflow: auto;
+  padding: 5px;
+}
